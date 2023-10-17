@@ -8,5 +8,9 @@
 ## _Documentacion para la corrida:_
 
 ## _Division de tareas:_
+- Diego Ramirez:
+- Moises fonseca: 
+- Estefan leon: 
+- Juan Diego Araya: 
 
 ## _Documentacion de menu de usuario y sus opciones:_
