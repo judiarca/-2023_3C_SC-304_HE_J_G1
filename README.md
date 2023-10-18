@@ -1,16 +1,16 @@
 # Proyecto Estructura de datos
 ## _Grupo #1_
 ## _Integrantes:_
-✨Moises Fonseca Barboza✨
-✨Diego Ramirez Corrales✨
-✨Estefan Leon Cordero✨ 
-✨Juan Diego Araya Calderon✨
-## _Documentacion para la corrida:_
+-✨Moises Fonseca Barboza✨
+-✨Diego Ramirez Corrales✨
+-✨Estefan Leon Cordero✨ 
+-✨Juan Diego Araya Calderon✨
+## _Componentes visuales y librerias:_
 
 ## _Division de tareas:_
-- Diego Ramirez:
-- Moises fonseca: 
-- Estefan leon: 
-- Juan Diego Araya: 
+- Diego Ramirez: creacion de diagrama de clases
+- Moises fonseca: componentes y librerias
+- Estefan leon: componentes y librerias
+- Juan Diego Araya: Creacion de repositorio
 
 ## _Documentacion de menu de usuario y sus opciones:_
