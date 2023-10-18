@@ -1,10 +1,10 @@
 # Proyecto Estructura de datos
 ## _Grupo #1_
 ## _Integrantes:_
--✨Moises Fonseca Barboza✨
--✨Diego Ramirez Corrales✨
--✨Estefan Leon Cordero✨ 
--✨Juan Diego Araya Calderon✨
+- ✨Moises Fonseca Barboza✨
+- ✨Diego Ramirez Corrales✨
+- ✨Estefan Leon Cordero✨ 
+- ✨Juan Diego Araya Calderon✨
 ## _Componentes visuales y librerias:_
 
 ## _Division de tareas:_
