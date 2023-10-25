@@ -10,9 +10,6 @@
 >ventanas emergentes que nos van a ayudar a movernos a 
 >traves del menu y sus distintas opciones.
 
->Se aplicara la API ini4j para realizar
->la carga de configuraciones guardadas en formato .ini
-
 >Libreria Gradient se utilizara para hacer una serie de efectos
 >visuales y hacer el proyecto mas atractivo a la vista
 
@@ -24,3 +21,5 @@
 - Juan Diego Araya: Creacion de repositorio
 
 ## _Documentacion de menu de usuario y sus opciones:_
+>Se aplicara la API ini4j para realizar
+>la carga de configuraciones guardadas en formato .ini
