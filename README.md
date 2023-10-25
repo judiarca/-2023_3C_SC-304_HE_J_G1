@@ -13,6 +13,8 @@
 >Libreria Gradient se utilizara para hacer una serie de efectos
 >visuales y hacer el proyecto mas atractivo a la vista
 
+>La libreria SWING tambien sera utilizada para la creacion de una interfaz grafica
+
 
 ## _Division de tareas:_
 - Diego Ramirez: creacion de diagrama de clases
