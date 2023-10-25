@@ -13,6 +13,9 @@
 >Se aplicara la API ini4j para realizar
 >la carga de configuraciones guardadas en formato .ini
 
+>Libreria Gradient se utilizara para hacer una serie de efectos
+>visuales y hacer el proyecto mas atractivo a la vista
+
 
 ## _Division de tareas:_
 - Diego Ramirez: creacion de diagrama de clases
