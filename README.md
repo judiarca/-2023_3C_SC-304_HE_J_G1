@@ -25,3 +25,10 @@
 ## _Documentacion de menu de usuario y sus opciones:_
 >Se aplicara la API ini4j para realizar
 >la carga de configuraciones guardadas en formato .ini
+
+
+## _Diagrama de clases_
+
+
+
+
