@@ -6,7 +6,7 @@
 - ✨Estefan Leon Cordero✨ 
 - ✨Juan Diego Araya Calderon✨
 ## _Componentes visuales y librerias:_
->Se hara el uso de la API JDialog nos permite crear
+>Se hara el uso de JDialog nos permite crear
 >ventanas emergentes que nos van a ayudar a movernos a 
 >traves del menu y sus distintas opciones.
 
@@ -23,9 +23,15 @@
 - Juan Diego Araya: Creacion de repositorio
 
 ## _Documentacion de menu de usuario y sus opciones:_
->Se aplicara la API ini4j para realizar
+>Se aplicara la libreria ini4j para realizar
 >la carga de configuraciones guardadas en formato .ini
 
+## _Opciones de interfaz de usuario:_
+>1) Agregar pasajeros: esta opcion nos permite agregar usuarios
+>ya sea uno por uno o hacer una carga de los mismos
+
+>2) Ver Vagon y estaciones: Esta opcion nos va a mostrar el estado actual del
+>vagon y de las distintas estaciones y la disposicion para los pasajeros 
 
 ## _Diagrama de clases_
 
