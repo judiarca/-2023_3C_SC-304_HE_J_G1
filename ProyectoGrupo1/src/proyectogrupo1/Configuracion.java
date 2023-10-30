@@ -16,7 +16,7 @@ public class Configuracion {
     private int filas_vagon_sin_discapacidad = 2;
     private int asientos_fila_discapacidad = 1;
     private int asientos_fila_sin_discapacidad = 3;
-    private String nombre_empresa = "Fidelitas Team 2";
+    private String nombre_empresa = "Defecto";
     private int tiempo_avance_segundos = 1;
     private int costo_por_kilometro = 100;
 
@@ -25,7 +25,7 @@ public class Configuracion {
         Popups Config = new Popups();
         Config.espera(mensaje);
         try {
-            Ini ini = new Ini(new File("proyectogrupo2/config.ini"));
+            Ini ini = new Ini(new File("ProyectoGrupo2\\src\\proyectogrupo1\\config.ini"));
             this.filas_vagon_discapacidad = Integer.parseInt(ini.get("Configuracion", "filas_vagon_discapacidad"));
             this.filas_vagon_sin_discapacidad = Integer.parseInt(ini.get("Configuracion", "filas_vagon_sin_discapacidad"));
             this.asientos_fila_discapacidad = Integer.parseInt(ini.get("Configuracion", "asientos_fila_discapacidad"));
@@ -34,7 +34,7 @@ public class Configuracion {
             this.tiempo_avance_segundos = Integer.parseInt(ini.get("Configuracion", "tiempo_avance_segundos"));
             this.costo_por_kilometro = Integer.parseInt(ini.get("Configuracion", "costo_por_kilometro"));
        } catch (FileNotFoundException e) {
-        System.out.println("Error: Archivo de configuración no encontrado.");
+        System.out.println("Error: Archivo de configuracion no encontrado.");
     } catch (IOException e) {
         e.printStackTrace();
     }
