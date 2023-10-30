@@ -152,7 +152,7 @@ public class Popups {
         UIManager.put("Label.font", new Font("Segoe UI", Font.PLAIN, 14)); 
 
         ClassLoader classLoader = Popups.class.getClassLoader();
-        ImageIcon icono2 = new ImageIcon(classLoader.getResource("proyecto_pizzeria/images/error.gif"));
+        ImageIcon icono2 = new ImageIcon(classLoader.getResource("img/error.gif"));
 
         JOptionPane pane = new JOptionPane(
                 error_o_mensaje,

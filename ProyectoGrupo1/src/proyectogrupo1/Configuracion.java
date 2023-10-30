@@ -25,7 +25,7 @@ public class Configuracion {
         Popups Config = new Popups();
         Config.espera(mensaje);
         try {
-            Ini ini = new Ini(new File("ProyectoGrupo2\\src\\proyectogrupo1\\config.ini"));
+           Ini ini = new Ini(new File("src/proyectogrupo1/config.ini"));
             this.filas_vagon_discapacidad = Integer.parseInt(ini.get("Configuracion", "filas_vagon_discapacidad"));
             this.filas_vagon_sin_discapacidad = Integer.parseInt(ini.get("Configuracion", "filas_vagon_sin_discapacidad"));
             this.asientos_fila_discapacidad = Integer.parseInt(ini.get("Configuracion", "asientos_fila_discapacidad"));
@@ -34,7 +34,11 @@ public class Configuracion {
             this.tiempo_avance_segundos = Integer.parseInt(ini.get("Configuracion", "tiempo_avance_segundos"));
             this.costo_por_kilometro = Integer.parseInt(ini.get("Configuracion", "costo_por_kilometro"));
        } catch (FileNotFoundException e) {
-        System.out.println("Error: Archivo de configuracion no encontrado.");
+           String error_MSG = "Error: Archivo de configuracion no encontrado.";
+           Popups error = new Popups();
+           error.error(error_MSG);
+        //System.out.println("Error: Archivo de configuracion no encontrado.");
+        //System.out.println("Ruta del archivo: " + new File("config.ini").getAbsolutePath());
     } catch (IOException e) {
         e.printStackTrace();
     }
