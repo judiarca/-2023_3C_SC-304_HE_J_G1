@@ -117,7 +117,7 @@
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="Pasajeros" alignment="0" max="32767" attributes="0"/>
-                          <Component id="Vagones1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Vagones" alignment="0" max="32767" attributes="0"/>
                           <Component id="about" alignment="0" max="32767" attributes="0"/>
                           <Component id="Exit" max="32767" attributes="0"/>
                       </Group>
@@ -131,7 +131,7 @@
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="Pasajeros" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="Vagones1" min="-2" max="-2" attributes="0"/>
+                      <Component id="Vagones" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="about" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
@@ -203,7 +203,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="Vagones1">
+            <Component class="javax.swing.JButton" name="Vagones">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="33" red="0" type="rgb"/>
@@ -220,8 +220,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Vagones1MouseEntered"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Vagones1ActionPerformed"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="VagonesMouseEntered"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VagonesActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

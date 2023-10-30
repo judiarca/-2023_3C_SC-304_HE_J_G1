@@ -72,7 +72,7 @@ public class Menu extends javax.swing.JFrame {
         Exit = new javax.swing.JButton();
         Pasajeros = new javax.swing.JButton();
         about = new javax.swing.JButton();
-        Vagones1 = new javax.swing.JButton();
+        Vagones = new javax.swing.JButton();
         Contenido = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -125,19 +125,19 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        Vagones1.setBackground(new java.awt.Color(0, 51, 153));
-        Vagones1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Vagones1.setForeground(new java.awt.Color(255, 255, 255));
-        Vagones1.setText("Vagones");
-        Vagones1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Vagones1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Vagones.setBackground(new java.awt.Color(0, 51, 153));
+        Vagones.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Vagones.setForeground(new java.awt.Color(255, 255, 255));
+        Vagones.setText("Vagones");
+        Vagones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Vagones.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Vagones1MouseEntered(evt);
+                VagonesMouseEntered(evt);
             }
         });
-        Vagones1.addActionListener(new java.awt.event.ActionListener() {
+        Vagones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Vagones1ActionPerformed(evt);
+                VagonesActionPerformed(evt);
             }
         });
 
@@ -149,7 +149,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Pasajeros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Vagones1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Vagones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Exit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(36, Short.MAX_VALUE))
@@ -160,7 +160,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(Pasajeros)
                 .addGap(18, 18, 18)
-                .addComponent(Vagones1)
+                .addComponent(Vagones)
                 .addGap(18, 18, 18)
                 .addComponent(about)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -255,13 +255,20 @@ public class Menu extends javax.swing.JFrame {
         Contenido.repaint();
     }//GEN-LAST:event_PasajerosMouseEntered
 
-    private void Vagones1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Vagones1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Vagones1MouseEntered
+    private void VagonesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VagonesMouseEntered
+       Estacion_Vagones pagina = new Estacion_Vagones();
+        pagina.setSize(456, 312);
+        pagina.setLocation(0, 0);
 
-    private void Vagones1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vagones1ActionPerformed
+        Contenido.removeAll();
+        Contenido.add(pagina, BorderLayout.CENTER);
+        Contenido.revalidate();
+        Contenido.repaint();
+    }//GEN-LAST:event_VagonesMouseEntered
+
+    private void VagonesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VagonesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Vagones1ActionPerformed
+    }//GEN-LAST:event_VagonesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,7 +309,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel Contenido;
     private javax.swing.JButton Exit;
     private javax.swing.JButton Pasajeros;
-    private javax.swing.JButton Vagones1;
+    private javax.swing.JButton Vagones;
     private javax.swing.JButton about;
     private javax.swing.JPanel header;
     private javax.swing.JDesktopPane jDesktopPane1;
