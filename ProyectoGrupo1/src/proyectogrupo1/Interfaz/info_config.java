@@ -8,11 +8,9 @@ import java.awt.Color;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import static java.awt.SystemColor.info;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import popups.Popups;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
 import proyectogrupo1.Configuracion;
 
 /**
@@ -20,29 +18,34 @@ import proyectogrupo1.Configuracion;
  * @author RouryR
  */
 public class info_config extends javax.swing.JDialog {
+    private int tiempoRestante = 5; // Tiempo restante en segundos
+private Timer timer;
 
     /**
      * Creates new form info_config
      */
     public info_config(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
-        initComponents();
-        mostrarContenidoConfig();
-    }
+       super(parent, modal);
+    initComponents();
+    mostrarContenidoConfig();
+    
+    // Configura un temporizador para actualizar el botón "Aceptar" cada segundo
+    timer = new Timer(1000, new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            tiempoRestante--; // Reduce el tiempo restante en un segundo
+            Aceptar.setText(" (" + tiempoRestante + "s)"); // Actualiza el texto del botón
+            if (tiempoRestante <= 0) {
+                // Cierra el JDialog cuando el tiempo restante llega a cero
+                dispose();
+                timer.stop(); // Detiene el temporizador
+            }
+        }
+    });
+    timer.start(); // Inicia el temporizador
+    } // Inicia el temporizador
 
     private void mostrarContenidoConfig() {
-//        StringBuilder contenido = new StringBuilder();
-//        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\RouryR\\Documents\\Programacion\\Java\\Estructura de Datos\\ProyectoFinal\\ProyectoGrupo2\\src\\proyectogrupo2\\config.ini"))) {
-//            String linea;
-//            while ((linea = br.readLine()) != null) {
-//                contenido.append(linea).append("\n");
-//            }
-//            info.setText(contenido.toString()); // Configura el contenido en el TextArea
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            info.setText("Error al leer el archivo config.ini");
-//        }
-
         StringBuilder contenido = new StringBuilder();
         Configuracion configuracion = new Configuracion();
 
@@ -63,8 +66,7 @@ public class info_config extends javax.swing.JDialog {
         contenido.append("Nombre de la Empresa: ").append(nombreEmpresa).append("\n \n");
         contenido.append("Tiempo de Avance entre Paradas (segundos): ").append(tiempoAvanceSegundos).append("\n \n");
         contenido.append("Costo por Kilometro Recorrido: ").append(costoPorKilometro).append(" colones");
-
-        info.setText(contenido.toString()); // Configura el contenido en el JTextArea
+        info.setText(contenido.toString());
     }
 
     /**
@@ -83,8 +85,8 @@ public class info_config extends javax.swing.JDialog {
                 Graphics2D g2d = (Graphics2D) g;
                 int w = getWidth();
                 int h = getHeight();
-                Color colorInicial = Color.decode("#158c30"); // Color inicial en formato HEX
-                Color colorFinal = Color.decode("#0e33bd"); // Color final en formato HEX
+                Color colorInicial = Color.decode("#D16BA5"); // Color inicial en formato HEX
+                Color colorFinal = Color.decode("#86A8E7"); // Color final en formato HEX
                 GradientPaint gradientPaint = new GradientPaint(0, 0, colorInicial, w, h, colorFinal);
                 g2d.setPaint(gradientPaint);
                 g2d.fillRect(0, 0, w, h);
@@ -93,17 +95,19 @@ public class info_config extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         info = new javax.swing.JTextArea();
         Aceptar = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
 
-        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 51), 3, true));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
 
+        info.setEditable(false);
         info.setColumns(20);
         info.setRows(5);
+        info.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        info.setFocusable(false);
         jScrollPane1.setViewportView(info);
 
         Aceptar.setBackground(new java.awt.Color(51, 102, 255));
@@ -117,28 +121,9 @@ public class info_config extends javax.swing.JDialog {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 204, 51));
         jLabel1.setText("Configuracion Aplicada");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
-        );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -148,22 +133,22 @@ public class info_config extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(126, 126, 126)
+                        .addGap(122, 122, 122)
                         .addComponent(Aceptar)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(Aceptar)
                 .addContainerGap())
         );
@@ -236,7 +221,6 @@ public class info_config extends javax.swing.JDialog {
     private javax.swing.JTextArea info;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

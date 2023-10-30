@@ -18,7 +18,7 @@ public class ProyectoGrupo1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Popups.bienvenido();
+        //Popups.bienvenido();
         
 
         info_config dialog = new info_config(new javax.swing.JFrame(), true);
@@ -26,7 +26,7 @@ public class ProyectoGrupo1 {
         // Hacer visible el JDialog
         dialog.setVisible(true);
         
-         Menu inicio = new Menu();
+        Menu inicio = new Menu();
         inicio.setVisible(true);
     }
     

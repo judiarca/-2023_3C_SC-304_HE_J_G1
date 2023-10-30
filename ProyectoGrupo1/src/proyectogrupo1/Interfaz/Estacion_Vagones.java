@@ -37,8 +37,10 @@ public class Estacion_Vagones extends javax.swing.JPanel {
         Agregar_Pasajeros.setBackground(new java.awt.Color(0, 51, 153));
         Agregar_Pasajeros.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         Agregar_Pasajeros.setForeground(new java.awt.Color(255, 255, 255));
-        Agregar_Pasajeros.setText("Ver Vagones");
+        Agregar_Pasajeros.setText("Ver Estado");
+        Agregar_Pasajeros.setToolTipText("");
         Agregar_Pasajeros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Agregar_Pasajeros.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Agregar_Pasajeros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Agregar_PasajerosActionPerformed(evt);
@@ -52,22 +54,22 @@ public class Estacion_Vagones extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(19, 19, 19)
                 .addComponent(Agregar_Pasajeros)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(19, 19, 19))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(121, 121, 121)
                 .addComponent(Agregar_Pasajeros)
-                .addGap(157, 157, 157))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
