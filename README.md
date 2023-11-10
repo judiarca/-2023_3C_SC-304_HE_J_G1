@@ -27,11 +27,14 @@
 >la carga de configuraciones guardadas en formato .ini
 
 ## _Opciones de interfaz de usuario:_
->1) Agregar pasajeros: esta opcion nos permite agregar usuarios
+>1) Pasajeros: esta opcion nos permite agregar usuarios
 >ya sea uno por uno o hacer una carga de los mismos
+>y contamos con la opcion Mostrar lista, esta nos hace un print de la lista
 
->2) Ver Vagon y estaciones: Esta opcion nos va a mostrar el estado actual del
->vagon y de las distintas estaciones y la disposicion para los pasajeros 
+>2) Vagones: Esta opcion nos va a mostrar el estado actual del
+>vagon y de las distintas estaciones
+
+>3) About: Esta opcion muestra informacion del proyecto y algunos aspectos generales 
 
 ## _Diagrama de clases_
 
