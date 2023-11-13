@@ -12,16 +12,22 @@ public class Vagon {
 
     private Pila[] asientos;
     private int capacidadMaxima;
+    private int capacidadMaximaDisc;
 
-    public Vagon(int numFilas, int asientosPorFila) {
+    public Vagon(int numFilas,  int numFilasDisc) {
         this.asientos = new Pila[numFilas];
-        this.capacidadMaxima = numFilas * asientosPorFila;
-
+        this.asientos = new Pila[numFilasDisc];
+        this.capacidadMaxima = capacidadMaxima;
+        this.capacidadMaximaDisc = capacidadMaximaDisc;
         for (int i = 0; i < numFilas; i++) {
-            asientos[i] = new Pila(asientosPorFila);
+            asientos[i] = new Pila(capacidadMaxima);
+        }
+         for (int i = 0; i < numFilasDisc; i++) {
+            asientos[i] = new Pila(capacidadMaximaDisc);
         }
     }
-
+    
+// cambiar este for each por un metodo distinto que no lo use 
     public boolean subirPasajero(Pasajero pasajero) {
         for (Pila fila : asientos) {
             if (!fila.estaLlena()) {
