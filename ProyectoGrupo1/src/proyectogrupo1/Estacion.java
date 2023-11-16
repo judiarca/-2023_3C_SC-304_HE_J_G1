@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package proyectogrupo1;
-
 /**
  *
  * @author estefanleon
@@ -22,33 +21,47 @@ public class Estacion {
         this.Estacion_Origen = Estacion_Origen;
         this.Estacion_Destino = Estacion_Destino;
     }
-    //metodo para convertir numero de estacion a su respectivo nombre
-    private String NumeroEstacion(int numeroEstacion) {
-       
-        switch (numeroEstacion) {
-            case 1: return "San Jose";
-            case 2: return "Alajuela";
-            case 3: return "Cartago";
-            case 4: return "Heredia";
-            case 5: return "Guanacaste";
-            case 6: return "Puntarenas";
-            case 7: return "Limón";
-            default: return "Desconocido";
-        }
-    }
-    //metodo para leer e imprimir las estaciones de tren
-    public void leerEImprimirEstaciones() {
-        for (int i = 1; i <= 7; i++) {
-            Estacion estacion = new Estacion(i, i + 10, i + 20); 
-            System.out.println("Estación ID: " + estacion.Estacion_id);
-            System.out.println("Origen: " + NumeroEstacion(estacion.Estacion_Origen));
-            System.out.println("Destino: " + NumeroEstacion(estacion.Estacion_Destino));
-            System.out.println("--------------");
-        }
-    }//fin del metodo leerEimprimirEstaciones
-    
-    }//fin de la clase Estacion
 
+    public int getEstacion_Origen() {
+        return Estacion_Origen;
+    }
+
+    public int getEstacion_Destino() {
+        return Estacion_Destino;
+    }
+
+    public Cola getColaDisc() {
+        return ColaDisc;
+    }
+
+    public Cola getColaNoDisc() {
+        return ColaNoDisc;
+    }
+    //metodo
+    // Método que retorna el nombre de la estación
+    
+    public String obtenerNombreEstacion() {
+        if (Estacion_id == 0) {
+            return "San Jose";
+        } else if (Estacion_id == 1) {
+            return "Alajuela";
+        } else if (Estacion_id == 2) {
+            return "Cartago";
+        } else if (Estacion_id == 3) {
+            return "Heredia";
+        } else if (Estacion_id == 4) {
+            return "Puntarenas";
+        } else if (Estacion_id == 5) {
+            return "Guanacaste";
+        } else if (Estacion_id == 6) {
+            return "Limon";    
+        } else 
+           return"";                                    
+    }
+     
+            
+  
    
-       
+    
+}//fin de la clase Estacion
 
