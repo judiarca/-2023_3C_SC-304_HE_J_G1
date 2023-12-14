@@ -12,6 +12,7 @@
 
 >Se hizo el uso de Java Swing nos permite crear
 >Menu del proyecto con el uso de botones, ventanas, paneles etc
+>https://github.com/judiarca/-2023_3C_SC-304_HE_J_G1/blob/main/Screenshot_2.png
 
 >Libreria Gradient se utilizara para hacer una serie de efectos
 >visuales y hacer el proyecto mas atractivo a la vista
