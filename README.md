@@ -20,16 +20,20 @@
 >la carga de configuraciones guardadas en formato .ini
 
 ## _Opciones de interfaz de usuario:_
->1) Pasajeros: esta opcion nos permite agregar usuarios
->ya sea uno por uno o hacer una carga de los mismos
->y contamos con la opcion Mostrar lista, esta nos hace un print de la lista
+>1) Agregar pasajero: esta opcion nos permite agregar pasajeros
+>uno por uno a el tren
 
->2) Vagones: Esta opcion nos va a mostrar el estado actual del
->vagon y de las distintas estaciones
+>2) Cargar pasajeros: Esta opcion nos permite hacer una carga de varios pasajeros
+>a la vez con sus distintos datos
 
->3) About: Esta opcion muestra informacion del proyecto y algunos aspectos generales
+>3) Ver lista: Con esta opcion podemos visualizar las colas de espera de las distintas
+>estaciones con sus pasajeros
 
->4) Cargar pasajeros: nos permite realizar una carga de un grupo de pasajeros  
+>4) Ver vagon: Nos despliega una ventana que nos permite ver el tren antes de que inicie el recorrido programado
+
+>5) Acerca de: Nos muestra un pop up que describes datos generales del proyecto
+
+>6) Configuracion: Esta ventana nos muestra la carga la cual el tren esta utilizando actualmente   
 
 ## _Diagrama de clases_
 
