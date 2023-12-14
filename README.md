@@ -6,25 +6,27 @@
 - ✨Estefan Leon Cordero✨ 
 - ✨Juan Diego Araya Calderon✨
 ## _Componentes visuales y librerias:_
->Se hara el uso de JDialog nos permite crear
+>Se hizo el uso de JDialog nos permite crear
 >ventanas emergentes que nos van a ayudar a movernos a 
 >traves del menu y sus distintas opciones.
+
+>Se hizo el uso de Java Swing nos permite crear
+>Menu del proyecto con el uso de botones, ventanas, paneles etc
 
 >Libreria Gradient se utilizara para hacer una serie de efectos
 >visuales y hacer el proyecto mas atractivo a la vista
 
->La libreria SWING tambien sera utilizada para la creacion de una interfaz grafica
 
 ## _Documentacion de menu de usuario y sus opciones:_
 >Se aplicara la libreria ini4j para realizar
 >la carga de configuraciones guardadas en formato .ini
 
 ## _Opciones de interfaz de usuario:_
->1) Agregar pasajero: esta opcion nos permite agregar pasajeros
+>1) Agregar pasajero: Nos despliega una ventana que nos permite agregar pasajeros
 >uno por uno a el tren
 
 >2) Cargar pasajeros: Esta opcion nos permite hacer una carga de varios pasajeros
->a la vez con sus distintos datos
+>a la vez con sus distintos datos desde un archi CSV
 
 >3) Ver lista: Con esta opcion podemos visualizar las colas de espera de las distintas
 >estaciones con sus pasajeros
