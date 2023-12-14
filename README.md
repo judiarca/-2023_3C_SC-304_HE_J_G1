@@ -15,13 +15,6 @@
 
 >La libreria SWING tambien sera utilizada para la creacion de una interfaz grafica
 
-
-## _Division de tareas:_
-- Diego Ramirez: creacion de diagrama de clases
-- Moises fonseca: componentes y librerias
-- Estefan leon: componentes y librerias
-- Juan Diego Araya: Creacion de repositorio
-
 ## _Documentacion de menu de usuario y sus opciones:_
 >Se aplicara la libreria ini4j para realizar
 >la carga de configuraciones guardadas en formato .ini
