@@ -27,7 +27,9 @@
 >2) Vagones: Esta opcion nos va a mostrar el estado actual del
 >vagon y de las distintas estaciones
 
->3) About: Esta opcion muestra informacion del proyecto y algunos aspectos generales 
+>3) About: Esta opcion muestra informacion del proyecto y algunos aspectos generales
+
+>4) Cargar pasajeros: nos permite realizar una carga de un grupo de pasajeros  
 
 ## _Diagrama de clases_
 
