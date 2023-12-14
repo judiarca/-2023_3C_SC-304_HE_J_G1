@@ -1,9 +1,0 @@
-Nombre;Edad;Estacion_Origen;Estacion_Destino;Discapacitado;Estado
-Juan Perez;30;1;4;NO;EN_COLA
-Maria Rodriguez;25;2;3;SI;EN_CAMINO
-Carlos Gonzalez;40;4;5;SI;COMPLETADO
-Ana Martinez;35;1;6;NO;COMPLETADO
-Diego Ramirez;18;5;6;NO;EN_COLA
-Edwin Alvarado;22;5;6;NO;EN_CAMINO
-Ricardo Mendieta;50;3;4;SI;EN_COLA
-
