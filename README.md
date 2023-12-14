@@ -12,8 +12,6 @@
 
 >Se hizo el uso de Java Swing nos permite crear
 >Menu del proyecto con el uso de botones, ventanas, paneles etc
-![Screenshot_3](https://github.com/judiarca/-2023_3C_SC-304_HE_J_G1/assets/92670091/8a2b5b3e-8c59-460a-9b53-44aa38ec51a0)
-![Screenshot_2](https://github.com/judiarca/-2023_3C_SC-304_HE_J_G1/assets/92670091/4cb89dc0-f50d-4c84-bd5c-1c9bac193cbb)
 
 
 >Libreria Gradient se utilizara para hacer una serie de efectos
@@ -25,6 +23,8 @@
 >la carga de configuraciones guardadas en formato .ini
 
 ## _Opciones de interfaz de usuario:_
+![Screenshot_3](https://github.com/judiarca/-2023_3C_SC-304_HE_J_G1/assets/92670091/8a2b5b3e-8c59-460a-9b53-44aa38ec51a0)
+![Screenshot_2](https://github.com/judiarca/-2023_3C_SC-304_HE_J_G1/assets/92670091/4cb89dc0-f50d-4c84-bd5c-1c9bac193cbb)
 >1) Agregar pasajero: Nos despliega una ventana que nos permite agregar pasajeros
 >uno por uno a el tren
 
